@@ -1,22 +1,22 @@
 class Kiln < Formula
   desc "GitHub project automation daemon with Claude-powered workflows"
   homepage "https://github.com/agentic-metallurgy/kiln"
-  version "1.1.0"
+  version "2.0.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/agentic-metallurgy/homebrew-tap/releases/download/v#{version}/kiln-darwin-arm64"
-      sha256 "0be7642edd161df37db9a4e8ff64d9be6306ca2d744582336d374ae936b4b6cf"
+      sha256 "8ac4346ad137e6c2d8fd69c9079dcbbed4bda5fda397533d506dabaa3a4543ed"
     else
       url "https://github.com/agentic-metallurgy/homebrew-tap/releases/download/v#{version}/kiln-darwin-x86_64"
-      sha256 "e5087c3edd850ccef6c874121b03337053eba72cafdf49caf1995d79792a8948"
+      sha256 "4a1b52c9a421a43bba917223aa1be906cb1d9108d3faeadbd8baf577434fdcff"
     end
   end
 
   on_linux do
     url "https://github.com/agentic-metallurgy/homebrew-tap/releases/download/v#{version}/kiln-linux-x86_64"
-    sha256 "ab8027ee85b7651fbd302c6972684fd102958b524ae065359de68e88491cd56b"
+    sha256 "ddcd1b5693a986ec3bc8edd133f39f5c3714dd392337f49c5c7b7d57fafd0aba"
   end
 
   def install
