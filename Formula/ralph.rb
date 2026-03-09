@@ -11,7 +11,7 @@ class Ralph < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/agentic-metallurgy/ralph/releases/download/v2026.3.8/ralph_2026.3.8_darwin_amd64.tar.gz"
-      sha256 "c77819a2ae1287d851c3a7a3c8e6ee6b108911f9bf0e39825851bfc58bf30d5f"
+      sha256 "26ec5327eaffc7455c5668b665f8224bf3d70ac92d7dff1fa8dea26fae1ed936"
 
       define_method(:install) do
         bin.install "ralph"
@@ -19,7 +19,7 @@ class Ralph < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/agentic-metallurgy/ralph/releases/download/v2026.3.8/ralph_2026.3.8_darwin_arm64.tar.gz"
-      sha256 "9cb765ee8dad2b08a79f8d86f1824ec6e3507a12f1592cc7a570ce10943788d7"
+      sha256 "bd0d3cb31cf8b3a920d112467b000602809e4e09a5928c8c48841f4ca824c282"
 
       define_method(:install) do
         bin.install "ralph"
@@ -30,14 +30,14 @@ class Ralph < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/agentic-metallurgy/ralph/releases/download/v2026.3.8/ralph_2026.3.8_linux_amd64.tar.gz"
-      sha256 "b99d6deee8ab52260dd5cdccb075965349bc6d6d95f7949f32abb678b216d97f"
+      sha256 "3052725203187c7bf76bd22ba6cba8de074823db15201e8c30c918d4dd7d135d"
       define_method(:install) do
         bin.install "ralph"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/agentic-metallurgy/ralph/releases/download/v2026.3.8/ralph_2026.3.8_linux_arm64.tar.gz"
-      sha256 "000ef6739c0fede156c9302a22d98d609598a732a1aebfb4b4a61fa6c93b96b3"
+      sha256 "85de0726bef92190ad7ce2a8b8b7a683386f06f85b0381aaf6f37ca818e2598c"
       define_method(:install) do
         bin.install "ralph"
       end
