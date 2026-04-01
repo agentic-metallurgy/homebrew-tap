@@ -5,21 +5,21 @@
 class Ralph < Formula
   desc "Ralph - AI agent loop runner"
   homepage "https://github.com/agentic-metallurgy/ralph"
-  version "2026.3.28"
+  version "2026.4.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/agentic-metallurgy/ralph/releases/download/v2026.3.28/ralph_2026.3.28_darwin_amd64.tar.gz"
-      sha256 "79e0dc992803d99bff180d422b28e5cd343c88cc4c5c2620df0f3c0ccb14dd30"
+      url "https://github.com/agentic-metallurgy/ralph/releases/download/v2026.4.1/ralph_2026.4.1_darwin_amd64.tar.gz"
+      sha256 "71ac8742f1539819877a79ed1144e6c7976e706129651feee562b31d48cd6c0b"
 
       define_method(:install) do
         bin.install "ralph"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/agentic-metallurgy/ralph/releases/download/v2026.3.28/ralph_2026.3.28_darwin_arm64.tar.gz"
-      sha256 "e0eab6dd31701da57c814c0f1b3c92e642677f18109a660d02daa675adef83d1"
+      url "https://github.com/agentic-metallurgy/ralph/releases/download/v2026.4.1/ralph_2026.4.1_darwin_arm64.tar.gz"
+      sha256 "583441bbfbc595beff16301d58fadca3f16dfc170d735c755bebb5c6c2d14081"
 
       define_method(:install) do
         bin.install "ralph"
@@ -29,15 +29,15 @@ class Ralph < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agentic-metallurgy/ralph/releases/download/v2026.3.28/ralph_2026.3.28_linux_amd64.tar.gz"
-      sha256 "6bc63664d8927a93e80850a5ee0b7c7776579e5f80228363a8428214fa26da22"
+      url "https://github.com/agentic-metallurgy/ralph/releases/download/v2026.4.1/ralph_2026.4.1_linux_amd64.tar.gz"
+      sha256 "7de8d92e8a7934ae93694438e82822235f4cdfb58be8002f0df0bc54754951cc"
       define_method(:install) do
         bin.install "ralph"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agentic-metallurgy/ralph/releases/download/v2026.3.28/ralph_2026.3.28_linux_arm64.tar.gz"
-      sha256 "4d66ad0799f9deb06a8c91adad9a5c164bf94f88ddb4e31d076daaa905748816"
+      url "https://github.com/agentic-metallurgy/ralph/releases/download/v2026.4.1/ralph_2026.4.1_linux_arm64.tar.gz"
+      sha256 "154ca0b605c2583e10bc6ef5f6f762bc3c9c79d3969bac862d3c57b69712afb5"
       define_method(:install) do
         bin.install "ralph"
       end
